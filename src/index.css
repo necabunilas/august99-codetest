@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  margin: auto;
+  width: 60%;
+  height: 800px;
+  border: 1px solid green;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 8px;
+}
+
+.inner {
+  border: 1px solid green;
+  overflow: scroll;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+input {
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
